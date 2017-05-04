@@ -24,7 +24,8 @@
     <p>{{superhero.name}} </p>
     <p>{{superhero.number}}</p>
     <p>{{superhero.group}}</p>
-    <img src="{{superhero.img}}" alt="super hero" height="60px" width="60px">
-   </div>
+      <button ng-click="superheroImage = !superheroImage"> See Superhero</button>
+      <img src="{{superhero.img}}" alt="super hero" height="60px" width="60px" ng-show="superheroImage">
+  </div>
 </body>
 </html>
